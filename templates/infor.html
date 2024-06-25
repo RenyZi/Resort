@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'infor.css' %}">
+</head>
+<body>
+<p>
+    <h5>
+        {% if messages%}
+        {% for messo in messages %}
+        {{messo}}
+        {% endfor %}
+        {% endif %}
+    </h5>
+</p>
+<div class="edit nonactive">
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+            
+              <tbody>
+                <div class="displ">
+                <div class="inputslab">
+                    <tr><td><label for="fname">First Name {{objMember}}</label></td></tr>
+                    <tr><td><input type="text" name="firstname" id="fname"></td></tr>
+                    <tr><td><label for="lname">Last Name</label></td></tr>
+                    <tr><td><input type="text" name="lastname" id="lname"></td></tr>
+                    <tr><td><label for="email">Email</label></td></tr>
+                    <tr><td><input type="email" name="mail" id="email"></td></tr>
+                    
+                </div>
+                <div class="butt">
+                    <tr><td><button type="submit" id="upd">Update</button> <button type="button" id="back"><a href="{% url 'mypage' %}" style="text-decoration: none;color: whitesmoke;">Back</a></button></td></tr>
+                     
+                </div>
+            </div>
+             </tbody>
+           </div>
+            
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
+{% endblock %}

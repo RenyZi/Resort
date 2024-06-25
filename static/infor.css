@@ -1,0 +1,49 @@
+body{
+    box-shadow:  inset 150px -200px 1800px rgba(0, 0, 0, 1),inset -150px 0px 1800px rgba(0, 0, 0, 1);
+}
+form{
+    
+    width: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+input{
+    background-color: transparent;
+     border: 1px solid whitesmoke;
+     cursor: pointer;
+     border-radius: 8px;
+     padding: 2px 5px;
+     color: whitesmoke;
+}
+#upd{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 70px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 20px 0;
+    background-color: crimson;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    margin-right: 20%;
+    
+}
+#back{
+    margin-left: 20px;
+    cursor: pointer;
+    width: 70px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 20px 0;
+    background-color: crimson;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    font-weight: 900;
+}

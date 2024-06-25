@@ -1,0 +1,39 @@
+body{
+    box-shadow:  inset 10px -150px 5000px rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.cont{
+        background-color: rgba(0,0,0, 0.4);
+        width: 80%;
+        margin: 20px auto;
+        text-align: justify;
+        padding: 10px 30px;
+        border-radius: 20px;
+        border-top: 1px solid whitesmoke;
+}
+#first{
+    text-align: center; 
+    padding-top: 10px;
+}
+#acomodatin{
+    width: 70%; margin: 0 auto;
+}
+#list{
+    margin-left: 20px;
+}
+#seeing{
+    color: crimson;
+    font-style: italic;
+}
+.abs{
+    position: absolute;
+    display: block;
+    width: 400px;
+    top: 20px;
+    padding: 5px 0;
+    left: 20px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+ 
+}

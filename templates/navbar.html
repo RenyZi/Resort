@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+{% load static %}
+<link rel="stylesheet" href="{% static 'navbar.css' %}">
+
+</head>
+<body>
+    <!--Heading design-->
+    <header>
+        <nav class="bar">
+            <div class="cent">
+            <div class="imghead">
+                <img src="{% static 'css images/image7.jpg' %}" alt=""> <span id="resort">Resort</span>
+            </div>
+        </div>
+            <div class="displ">
+
+            <div id="kote">Kote Resto</div>
+            <div class="links">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+            <div class="logins">
+                {% if user.is_authenticated %}
+                <a href="{% url 'logout_user'%}">Log Out</a>
+                {% else %}
+                <a href="{% url 'login_user' %}">Log in </a>
+                {% endif %}
+            </div>
+
+        </div>
+
+        </nav>
+    </header>
+
+   <!-- <footer>
+        <div class="footerr">
+            &copy Kote's 2024
+        </div>
+        <div class="lin">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>-->
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin-left: 30px;
+            padding-top: 10px;
+            width: 340px;
+            
+        }
+        label{
+            margin: 10px 0px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: bolder;
+        }
+        input{
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            margin-left: 10px;
+            padding: 0px 10px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid crimson;
+            border-radius: 5px;
+            background-color: transparent;
+            color: whitesmoke;
+
+            
+        }
+        button{
+            width: 80px;
+            padding: 2px 5px;
+            border-radius: 10px;
+            background-color: crimson;
+            color: whitesmoke;
+            outline: none;
+            border: none;
+
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        #sub{
+            width: 80px;
+            margin-left: 0;
+            padding: 2px 5px;
+            border-radius: 10px;
+            background-color: crimson;
+            color: whitesmoke;
+        }
+        
+    </style>
+</head>
+<body>
+    {% if form.errors %}
+    There was an error 
+
+    {% endif %}
+    
+
+
+    <form action="" method="post">
+        {% csrf_token %}
+        
+    
+                {{formsign.as_p}}<br>
+                
+        
+        <input type="submit" id="sub">
+        <button type="submit"><a href="{% url 'login_user' %}">Login</a></button>
+    </form>
+</body>
+</html>
+
+{% endblock %}

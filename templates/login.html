@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'log.css'%}">
+</head>
+<body>
+
+    {% if user.is_authenticated == False %}
+
+        {% for message in messages %}
+            <div class="abst">{{message}}</div>
+        {% endfor %}
+
+    {% endif %}
+    <div class="heading"><h1>Login</h1></div>
+
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table>
+            <tr><td><label for="usernam">Username</label></td></tr>
+            <tr><td><input type="text" name="username"  id="usernam"></td></tr>
+            <tr><td><label for="passw">Password</label></td></tr>
+            <tr><td><input type="password" name="password" id="passw"></td></tr>
+            <br><br>
+            <tr><td><button type="submit">Log in </button><button type="submit"><a href="{% url 'member_view' %}">Don't have an account? Regester</a></button></td></tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
+{% endblock %}

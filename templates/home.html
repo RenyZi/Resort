@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kote Resort</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">  
+    
+</head>
+<body>  
+   
+    {% if user.is_authenticated %}
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}
+    {% else %}
+       {% for message in messages%}
+       <div class="abs">  {{message}}</div>
+       {% endfor %}
+
+    {% endif %} 
+    
+
+    <main>
+       <div class="cont">
+        <p id="first">Hello there, I'm officially inviting you to one of the best Resort in Naivasha, <br>
+            Kote's Resort is an amaizing hotel that you can imagine. We offer variety of services. 
+        <br>
+        Intercat with with this website. All the services offerd are in our about page.<br>
+        We also have two more branches in the Country.<br>
+        All booking placed will be handled with our receptionist once placed and you will be
+        contacted back as soon as we get your request
+
+       </p>
+       <br><br><br>
+       <p>
+        <div id="acomodatin" >
+        We also offer accomodations, rooms for meetings and also there are forms of entertainment.
+        They incude:
+        </div>
+        <ul id="list">
+            <li>Swimming</li>
+            <li>Pitch for playing games</li>
+            <li>Screens for watching movies</li>
+        </ul> 
+       </p><br>
+       <p>Words can't express the beauty of this Resort unless you come and see for yourself,
+        as the say goes, <span id="seeing">seeing is beliving.</span> You are welcome to this beautiful Resort </p>
+       </div>
+    </main>
+<footer>
+
+</footer>
+<script>
+    window.onload(
+        setTimeout = (()=>{document.querySelector(".abs").style.display = "none"},1000)  
+    );
+
+</script>
+</body>
+</html>
+
+{% endblock %}

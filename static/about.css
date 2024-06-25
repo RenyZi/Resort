@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    scroll-behavior: smooth;
+}
+.details{
+    padding-top: 20px; 
+    text-align: center; 
+    box-shadow:  inset 100px 10px 5000px rgba(0, 0, 0, 0.7);
+    
+}
+.info1::after{
+    content: "";
+    display: block;
+    clear: both;
+    width: 90%;
+   
+}
+.info1{
+    padding-top: 25px;
+    height: 70vh;
+    box-shadow:  inset 100px 10px 5000px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+#malik{
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: underline;
+    
+    
+}
+.info1 div{
+    float: left;
+    height: 340px;
+    
+}
+.info1 .imgg{
+    width: 30%;
+
+}
+
+.imgg img{
+    width: 380px;
+    height: 340px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.info1 .info11{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 320px 300px 300px;
+    justify-content: space-around;
+}
+.info1 .span1{
+    color: whitesmoke;
+    padding-left: 30px;
+    padding-top: 80px;
+
+}
+
+.info1 .span1 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+
+.info1 .span2{
+    color: white;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.info1 .span2 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+.info1 .span3{
+    color: white;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.info1 .span3 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+
+/*begining of style part 2*/
+.info2{
+    box-shadow:  inset 100px 10px 5000px rgba(0, 0, 0, 1);
+    padding-top: 8%;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.info2::after{
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+   
+}
+
+.info2 div{
+    float: left;
+    height: 440px;
+}
+#aimi{
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px 0;   
+    text-decoration: underline; 
+}
+.info2 .immg1{
+    width: 30%;
+    
+}
+
+.info2 .immg1 img{
+    width: 380px;
+    height: 380px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.info2 .info12{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 320px 300px 300px;
+    justify-content: space-around;
+}
+.info2 .span12{
+    color: whitesmoke;
+    padding-left: 30px;
+    padding-top: 80px;
+
+}
+
+.info2 .span12 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+
+.info2 .span22{
+    color: white;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.info2 .span22 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+.info2 .span32{
+    color: white;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.info2 .span32 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+
+/* gegin of styling part3*/
+
+.info3{
+    height: 90vh;
+    padding-top: 5%;
+    box-shadow:  inset 100px 10px 5000px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.info3::after{
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+   
+}
+
+.info3 div{
+    float: left;
+    height: 440px;
+}
+#jkote{
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px 0;    
+    text-decoration: underline;
+}
+
+.info3 .immg2{
+    padding-top: 15px;
+    width: 30%;
+
+}
+.info3 .immg2 img{
+    width: 380px;
+    height: 340px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.info3 .info13{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 320px 300px 300px;
+    justify-content: space-around;
+}
+
+.info3 .span31{
+    padding-left: 30px;
+    padding-top: 80px;
+
+}
+
+.info3 .span31 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+
+.info3 .span32{
+    color: white;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.info3 .span32 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+.info3 .span33{
+    color: white;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.info3 .span33 h4{
+    font-size: 20px;
+    margin:10px 0;
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: crimson;
+}
+hr{
+    background-color: #5a5757e0;
+    height: 5px;
+    outline: none;
+    border: none;
+}
+
+/*end of stykling part 3*/

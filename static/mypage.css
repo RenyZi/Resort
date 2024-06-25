@@ -1,0 +1,469 @@
+body{
+    box-shadow:  inset 10px -150px 5000px rgba(0, 0, 0, 1);
+    height: 264vh;
+    
+    }
+.clearfix{
+    position: relative; 
+    
+    
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+   }
+.clearfix div{
+    float: left;
+
+}
+.profile{
+    width: 25%;
+    height: 230vh;
+    border-right: 1px solid gray;
+    background-color:#1b1c20;
+    border-top: 2px solid gray;
+    outline: none;   
+}
+.content{
+    width: 75%; 
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top: 2px solid gray;
+    height: 230vh;
+    outline: none;   
+}
+.disflex{
+    width: 100%;
+    margin-top: 20px;
+}
+.imgflx{
+    width: 100%;
+
+}
+#same img{
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid whitesmoke;
+}
+
+.infcont1{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    border-radius: 30px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.book{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.book button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: gray;
+    color: whitesmoke;
+    padding: 10px 15px;
+    transition: all 0.85s ease-in-out;
+    
+}
+.book button:hover{
+    background-color: crimson;
+}
+/*part two*/
+
+.imgflx2{
+    width: 100%;
+    margin-top: 20px;
+    
+}    
+.infcont2{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*part three*/
+
+.imgflx3{
+    width: 100%;
+    margin-top: 20px;
+}
+.infcont3{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    border-right: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    border-radius: 30px;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+hr{
+    background-color: rgba(196, 192, 190, 0.144);
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 10px;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin:20px 0;
+
+}
+h2{
+    font-style: italic;
+}
+/*styling myprofile part*/
+
+#myprofil{
+    border: 1px solid crimson;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.container{
+    display: block;
+    
+}
+
+.accordion-content{
+       display: none;
+}
+.accordion label{
+    background-color: crimson;
+    cursor: pointer;
+    display: block;
+    width: 270px;
+    outline: none;
+    padding: 10px 20px;  
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 12.5%;
+    position: relative;
+      
+}
+.accordion input[type='radio']{
+    display: none;
+}
+
+
+.accordion-content{  
+    color: whitesmoke;
+    padding: 10px 30px;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+.accordion-content h4{
+    padding: 10px;
+
+}
+.accordion button{
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+/* javascript class*/
+.active{
+    display: block;
+}
+.filter{
+    filter: blur(40px);
+}
+
+.nonactive{
+    display: none;
+}
+
+/*profile*/
+
+.spp{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+.spp #head{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.spp #body{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+}
+/*profile*/
+.display{
+    background-color: rgba(0, 0, 0, 1);
+    position: absolute;
+    width: 80%;
+    height: 42%;
+    border: 3px solid crimson;
+    border-radius: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    
+   
+}
+ #cros{
+    position: fixed;
+    background-color: crimson;
+    color: whitesmoke;
+    padding: 2px 0;
+    width: 60px;
+    border-radius: 10px;
+    top: 20px;
+    right: 10px;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.details table{
+    
+    width: 400px;
+    
+}
+.details table span{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: crimson;
+    margin-right: 10px;
+    
+}
+
+.details table thead tr:nth-child(1) th{
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: left;
+}
+.details th{
+    height: 80px;
+}
+.details table thead tr:nth-child(2) th{
+    height: 20px;
+    text-align: left;
+    padding: 10px;
+    font-size: 1.5rem;
+    
+}
+.details td{
+    padding: 10px;
+}
+
+
+.details .buttonss{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid crimson;
+    border-radius: 30px;
+    height: 70px;
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: translateX(-50%);
+    transition: all 3s ease-in-out;
+}
+.details .buttonss #edit{
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: red;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.details .buttonss #delet{
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+    outline: none;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.details .buttonss button:hover{
+    transform: scale(.9);
+}
+.abst{
+    position: absolute;
+    display: block;
+    width: 400px;
+    top: 20px;
+    left: 20px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+.booked{
+    margin-top: 20px;
+    
+}
+.booked h2{
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+.booking table{
+    width: 335px;
+    height: 80px;
+    background-color: whitesmoke;
+    color: rgb(80, 78, 78);
+    border-collapse: collapse;
+    border-collapse:collapse ;
+    
+}
+.booking th{
+    font-size: 15px;
+    background-color: black;
+    padding: 2px;
+    color: whitesmoke;
+    
+}
+.booking td{
+ text-align: center;
+}
+
+.dat form{
+    color: whitesmoke;
+    width: 300px;
+    margin: 0 auto;
+    
+}
+.dat input{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.dat button{
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 5px 0;
+}
+
+
+.dat1 form{
+    color: whitesmoke;
+    width: 300px;
+    margin: 0 auto;
+    
+}
+.dat1 input{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.dat1 button{
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 5px 0;
+}
+
+
+.dat2 form{
+    color: whitesmoke;
+    width: 300px;
+    margin: 0 auto;
+    
+}
+.dat2 input{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+.dat2 button{
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 5px 0;
+}
+select{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2px 5px;
+}

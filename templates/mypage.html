@@ -1,0 +1,329 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="{% static 'mypage.css' %}">
+
+
+    
+</head>
+<body>
+    
+<div>
+
+    {% if user.is_authenticated %}
+
+        {% for message in messages %}
+            <div class="abst">{{message}}</div>
+        {% endfor %}
+
+    {% endif %}
+</div>
+
+<div class="clearfix">
+    <div class="profile">
+        <div id="myprofil">
+            
+            <button class="spp" >
+                <div id="head"></div>
+                <div id="body"></div>
+               </a>
+            </button>
+            
+            <span id="text">Welcome {{user}}</span>
+        </div> 
+<hr>
+     <div class="container">
+        <div class="accordion">
+            
+            <label for="food1">Malik available foods  <button id="plus">+</button> </label>
+            <input type="radio" name="" id="food1">
+                <div class="accordion-content" id="accord">
+                    <h4>Local</h4>
+                    <ul id="displaying">
+                       <li>Ugali Samaki @ Ksh 450</li>
+                       <li>Ugali Matumbo @ Ksh 340</li>
+                       <li>Chapati and Beans @ Ksh 80</li>
+                       <li>Mboga za kienyeji @ Ksh 60 with any acompanied food</li>   
+                    </ul>
+                </div>
+        </div>
+
+        <div class="accordion">
+            <label for="food2">Aimi available foods   <button id="plus1">+</button></label>
+            <input type="radio" name="" id="food2">
+                <div class="accordion-content" id="accord1">
+                    <h4>International</h4>
+                    <ul>
+                        <li>Hot dog @ Ksh 2450</li>
+                        <li>Shawarma @ Ksh 4340</li>
+                        <li>KFC meat @ Ksh 3000</li>
+                        <li>Pizza @ Ksh 4550</li>
+                        <li>For more information on the available food visit us</li>
+                    </ul>
+                </div>
+        </div>
+
+        <div class="accordion">
+            <label for="food3">Ja'kote available foods  <button id="plus2">+</button></label>
+            <input type="radio" name="" id="food3">
+                <div class="accordion-content" id="accord2">
+                    <h4>Local</h4>
+                    <ul>
+                        <li>Ugali Samaki @ Ksh 450</li>
+                        <li>Ugali Matumbo @ Ksh 340</li>
+                        <li>Chapati and Beans @ Ksh 80</li>
+                        <li>Mboga za kienyeji @ Ksh 60 with any acompanied food</li>
+                    </ul>
+                    <h4>International</h4>
+                    <ul>
+                        <li>Hot dog @ Ksh 2450</li>
+                        <li>Shawarma @ Ksh 4340</li>
+                        <li>KFC meat @ Ksh 3000</li>
+                        <li>Pizza @ Ksh 4550</li>
+                        <li>For more information on the available food visit us</li>
+                    </ul>
+                </div>
+        </div>
+     </div>
+     <hr>
+     <div class="booked">
+        <span id="bookbutton"><h2>Booking Information</h2></span>
+        <div class="booking">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hotel Name</th>
+                        <th>Location</th>
+                        <th>Type of payment</th>
+                        <th>Date Booked</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{malik_hotel.hotel_name}}</td>
+                        <td>{{malik_hotel.hotel_location}}</td>
+                        <td>{{malik_hotel.payment}}</td>
+                        <td>{{malik_hotel.malik_date}}</td>
+                        <td>{{malik_hotel.maliksataus}}</td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+     </div>
+    </div>
+
+    <div class="content">
+        <div class="disflex">
+            <div class="heading"><h1>Malik Hotel</h1></div>
+            <div class="imgflx" id="same"><img src="{% static 'css images/image1.jpg' %}" alt=""></div>
+            <div class="infcont1">
+                <div class="cost">
+                    <h2>Cost</h2>
+                    <ul>
+                        <li>Accomodation @ Ksh 2000 per night</li>
+                        <li>Additional services at different cost</li>
+                    </ul>
+
+                </div>
+                <div class="serv">
+                    <h2>Services</h2>
+                    <ul>
+                        <li>Entertainment @ Ksh 600 any</li>
+                        <li>Foods</li>
+                    </ul>
+                </div>
+                <div class="food">
+                    <h2>Food</h2>
+                    <ul>
+                        <li>Local food available</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="book">
+
+                <div class="dat nonactive">
+                <form action="" method="post">
+                    {% csrf_token %}
+                       <input type="date" name="datee">
+                       <select name="payment">
+                        <option value="">Payment type</option>
+                        <option value="Post pay" name ="post" >Post pay</option>
+                        <option value="Pre pay" name="pre" >Pre pay</option>
+                       </select>
+                       <input type="submit">
+                       <input type="text" name="malik" value="Malika" style="display: none;">
+                        
+                </form>
+             </div>
+            <div class="bokbutton"><button type="button" id="booking">Book</button></div>
+        </div>
+<hr>
+            <!--part two-->
+            <div class="heading"><h1>Aimi Hotel</h1></div>
+            <div class="imgflx2" id="same"><img src="{% static 'css images/image6.jpg' %}" alt=""></div>
+            <div class="infcont2">
+                <div class="cost2">
+                    <h2>Cost</h2>
+                    <ul>
+                        <li>Accomodation @ Ksh 2600 per night</li>
+                        <li>Additional services at different cost</li>
+                    </ul>
+
+                </div>
+                <div class="serv2">
+                    <h2>Services</h2>
+                    <ul>
+                        <li>Entertainment @ Ksh 1600 any</li>
+                        <li>Foods</li>
+                    </ul>
+                </div>
+                <div class="food">
+                    <h2>Food</h2>
+                    <ul>
+                        <li>International food available</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="book">
+                <div class="dat1 nonactive" >
+                    <p>Sorry! Under Maintainance</p>
+                 </div>
+                <div class="bokbutton">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        
+                    <button type="button" id="booking1">Book </button>
+
+                    </form>
+                   </div>
+            </div>
+           <!--part 3-->
+<hr>
+            <div class="heading"><h1>Ja'kote Hotel</h1></div>
+           <div class="imgflx3" id="same"><img src="{% static 'css images/image2.jpg' %}" alt=""></div>
+            <div class="infcont3">
+                <div class="cost3">
+                    <h2>Cost</h2>
+                    <ul>
+                        <li>Accomodation @ Ksh 2100 per night</li>
+                        <li>Additional services at different cost</li>
+                    </ul>
+
+                </div>
+                <div class="serv3">
+                    <h2>Services</h2>
+                    <ul>
+                        <li>Entertainment @ Ksh 1100 any</li>
+                        <li>Foods</li>
+                    </ul>
+                </div>
+
+                <div class="food">
+                    <h2>Food</h2>
+                    <ul>
+                        <li>Local food available</li>
+                        <li>International food available</li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="book">
+                <div class="dat2 nonactive" id="same"> 
+                    <p>Sorry! Under Maintainance</p>
+                 </div>
+                <div class="bokbutton">
+                    <button type="button" id="booking2">Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% if request.method == 'POST' %}
+<div class="display nonactive">
+
+    <div class="details">
+        <table>
+            <thead>
+                <tr>
+                    <th>Personal Information</th>
+                </tr>
+                <tr>
+                    <th>Hello there {{malik_hotel.meminfo.first_name}} {{malik_hotel.meminfo.last_name}}</th>
+                </tr>
+            </thead>
+            <br><br>
+            <tbody>
+                <tr><td><span>Username: </span>{{malik_hotel.meminfo.user_name}} {{details}}</td></tr>
+                <tr><td><span>Email: </span>{{malik_hotel.meminfo.email}}<br></td></tr>
+                <tr><td><span>Country: </span>{{malik_hotel.meminfo.country}}<br></td></tr>
+                <tr><td><span>County: </span>{{malik_hotel.meminfo.county}}<br></td></tr>
+                <tr><td><span>Gender: </span> {{malik_hotel.meminfo.gender}}<br></td></tr>
+                <tr><td><span>Date Joined: </span>{{malik_hotel.meminfo.date_joined}}<br></td></tr>
+            </tbody>
+      </table>
+      
+    </div>
+    <div class="buttonss">
+        <button type="button" id="edit"><a href="{% url 'edit' %}" style="text-decoration: none; color: black;">Edit</a></button>
+        
+        <button type="button" id="delet"><a href="{% url 'delete' %} " style="text-decoration: none; color: black;">Delete Account</a></button>
+      </div>
+    <button type="button" id="cros">X</button>
+</div>
+{% else %}
+    <div class="display nonactive">
+
+        <div class="details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Personal Information</th>
+                    </tr>
+                    <tr>
+                        <th>Hello there {{objmember.first_name}} {{objmember.last_name}}</th>
+                    </tr>
+                </thead>
+                <br><br>
+                <tbody>
+                    <tr><td><span>Username: </span>{{objmember.user_name}} {{details}}</td></tr>
+                    <tr><td><span>Email: </span>{{objmember.email}}<br></td></tr>
+                    <tr><td><span>Country: </span>{{objmember.country}}<br></td></tr>
+                    <tr><td><span>County: </span>{{objmember.county}}<br></td></tr>
+                    <tr><td><span>Gender: </span> {{objmember.gender}}<br></td></tr>
+                    <tr><td><span>Date Joined: </span>{{objmember.date_joined}}<br></td></tr>
+                </tbody>
+          </table>
+          
+        </div>
+        <div class="buttonss">
+            <button type="button" id="edit"><a href="{% url 'edit' %}" style="text-decoration: none; color: black;">Edit</a></button>
+            
+            <button type="button" id="delet"><a href="{% url 'delete' %} " style="text-decoration: none; color: black;">Delete Account</a></button>
+          </div>
+        <button type="button" id="cros">X</button>
+    </div>
+
+   {% endif %} 
+
+</div>
+
+</body>
+<script src="{% static 'mypage.js' %}"></script>
+</html>
+{% endblock%}

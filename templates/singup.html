@@ -1,0 +1,36 @@
+{%extends 'base.html'%}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+    
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <div class="message">
+        {% if messages %}
+            {% for message in messages %}
+            {{message}}
+            {% endfor %}
+        {% endif %}
+    </div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{formrecord}}
+
+        <button type="submit">Regester</button><button> <a href="{% url 'signuser' %}">Sign Up</a></button>
+    </form>
+    
+</body>
+</html>
+
+
+
+{% endblock %}

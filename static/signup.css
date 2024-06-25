@@ -1,0 +1,60 @@
+body{
+    box-shadow:  inset 150px -200px 1800px rgba(0, 0, 0, 1),inset -150px 0px 1800px rgba(0, 0, 0, 1);
+    
+}
+h1{
+    margin: 10px 25%;
+}
+form{
+    width: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    border: 2px solid crimson;
+    padding:10px;
+    background-color: rgba(0,0,0, 0.1);
+
+}
+label{
+    background-color: crimson;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+
+}
+input{
+    margin: 5px 20px;
+    cursor: pointer;
+    outline: none;
+    background-color: whitesmoke;
+    padding: 3px 10px;
+    border-radius: 10px;
+    width: 230px;
+    box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 1);
+}
+
+
+button{
+    background-color: crimson;
+    border: none;
+    outline: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: whitesmoke;
+    margin-top:30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.message{
+    position: absolute;
+    top: 10%;
+    left: 20px;
+    
+}

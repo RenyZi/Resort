@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kote's Resort</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    
+</head>
+<body>
+    <main>
+        <div class="details">
+            <p>We have 3 different Resort branches. <br>Each Resort offers different services that you need.</p>
+        </div>
+
+        <div class="griddispl">
+            <div class="info1">
+                <span id="malik"><h3>Malik Hotel</h3></span>
+                <div class="imgg"><img src="{% static 'css images/image1.jpg' %}" alt=""></div>
+                <div class="info11">
+                    <div class="span1"><h4>Information</h4>
+                        <ul>
+                            <li>Located in Karagita Nakuru county</li>
+                            <li>Was started in the year 2010</li>
+                            <li>Has gained popularity since then,<br> and visited by many government officials</li>
+                            <li>Offers accomodations</li>
+                            <li>Local food is served in this Resort</li>
+                        </ul>
+                    </div>
+                    <div class="span2"><h4>Expenditure</h4>
+                        <ul>
+                            <li>Ksh 2000 per night</li>
+                            <li>Ksh 500 for swimming per day</li>
+                            <li>Ksh 600 for entertainment</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="span3"><h4>Foods available</h4>
+                        <ul>
+                            <li>Ugali Samaki @ Ksh 450</li>
+                            <li>Ugali Matumbo @ Ksh 340</li>
+                            <li>Chapati and Beans @ Ksh 80</li>
+                            <li>Mboga za kienyeji @ Ksh 60 with any acompanied food</li>
+
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <span><hr></span>
+            <div class="info2">
+                <span id="aimi"><h3>Aimi Hotel</h3></span>
+                <div class="immg1"> <img src="{% static 'css images/image6.jpg' %}" alt=""></div>
+                <div class="info12">
+                    <div class="span12"><h4>Information</h4>
+                        <ul>
+                            <li>Located in Vihiga Kakamega county</li>
+                            <li>Was started in the year 2008</li>
+                            <li>Offers hotel services</li>
+                            <li>International food is served in this Resort</li>
+                        </ul>
+                    </div>
+
+                    <div class="span22"><h4>Expenditure</h4>
+                        <ul>
+                            <li>Ksh 4000 per night</li>
+                            <li>Ksh 900 for swimming per day</li>
+                            <li>Ksh 1600 for entertainment</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="span32"><h4>Foods available</h4>
+                        <ul>
+                            <li>Hot dog @ Ksh 2450</li>
+                            <li>Shawarma @ Ksh 4340</li>
+                            <li>KFC meat @ Ksh 3000</li>
+                            <li>Pizza @ Ksh 4550</li>
+                            <li>For more information on the available food visit us</li>
+
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <span><hr></span>
+            <div class="info3">
+                <span id="jkote"><h3>Ja'Kote Hotel</h3></span>
+                <div class="immg2"><img src="{% static 'css images/image2.jpg' %}" alt=""></div>
+                <div class="info13">
+                    <div class="span31"><h4>Information</h4>
+                        <ul>
+                            <li>Located in Nairobi county</li>
+                            <li>Was started in the year 2018</li>
+                            <li>Offers hotel services and accomodations</li>
+                            <li>International food and local food is served in this Resort</li>
+                        </ul>
+                    </div>
+
+                    <div class="span32"><h4>Expenditure</h4>
+                        <ul>
+                            <li>Ksh 3000 per night</li>
+                            <li>Ksh 700 for swimming per day</li>
+                            <li>Ksh 1100 for entertainment</li>
+                            
+                        </ul>
+
+                    </div>
+                    <div class="span33"><h4>Foods available</h4>
+                        <span>International Food</span>
+                        <span>Local Food</span>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>
+
+{% endblock %}
